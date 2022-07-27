@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>FreeCodeCamp - International Writers Guild</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title">Int Writers Guild Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our discord.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group"><label for="name-label">Name:</label>
+                <input type="text" id="name-label" name="name" required placeholder="Enter Your Name">
+            </div>
+            <div class="form-group"><label for="email-label">Email:</label>
+                <input type="email" id="email-label" name="email" required placeholder="Enter Your Email">
+            </div>
+            <div class="form-group"><label for="number-label">Age</label>
+                <input type="number" id="number-label" name="number" placeholder="Age" min="10" max="99">
+            </div>
+            <hr>
+            <div class="form-group"><label>Which option describes your current role:</label>
+                <label for="dropdown"></label><select id="dropdown">
+                    <option disabled selected value="select">Select an Option</option>
+                    <option value="challenges">Student</option>
+                    <option value="projects">Trad Published Author</option>
+                    <option value="community">Self-Published</option>
+                    <option value="opensource">Dabbler</option>
+                </select>
+            </div>
+            <hr>
+            <div class="form-group"><label>Would you recommend the Int Writers Guild to a writer friend?</label>
+
+                <label for="definitely">
+                    <input id="definitely" name="user-recommend" type="radio" class="input-radio" value="definitely">
+                    Definitely
+                </label>
+                <label for="maybe">
+                    <input id="maybe" name="user-recommend" type="radio" class="input-radio" value="maybe"> Maybe
+                </label>
+                <label for="not-sure">
+                    <input id="not-sure" name="user-recommend" type="radio" class="input-radio" value="not-sure"> Not
+                    Sure
+                </label>
+            </div>
+            <hr>
+            <div class="form-group"><label>What is your favorite feature of the Int. Writers Guild Discord?</label>
+                <label for="dropdown-favorite"></label><select id="dropdown-favorite">
+                    <option value="select">Select an Option</option>
+                    <option value="sprints">Sprints</option>
+                    <option value="genre-channels">Genre Channels</option>
+                    <option value="community">Community</option>
+                    <option value="prompts">Prompts</option>
+                    <option value="events">Events</option>
+                </select>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label>What would you like to see improved </label>
+                <label for="slow-chat">
+                    <input id="slow-chat" type="checkbox" name="slow-chat" value="additional" class="input-checkbox">
+                    Slow-Chat</label>
+                <label for="genre-channels">
+                    <input id="genre-channels" type="checkbox" name="genre-channels" value="additional"
+                           class="input-checkbox">Genre Channels</label>
+                <label for="moderation">
+                    <input id="moderation" type="checkbox" name="moderation" value="additional" class="input-checkbox">Moderation</label>
+                <label for="nsfw">
+                    <input id="nsfw" type="checkbox" name="marketing" value="additional"
+                           class="input-checkbox">NSFW Channels</label>
+                <label for="marketing">
+                    <input id="marketing" type="checkbox" name="add" value="additional" class="input-checkbox">Marketing</label>
+                <label for="publishing">
+                    <input id="publishing" type="checkbox" name="publishing" value="additional" class="input-checkbox">Publishing</label>
+                <label for="help-section">
+                    <input id="help-section" type="checkbox" name="help-section" value="additional"
+                           class="input-checkbox">Help Section</label>
+            </div>
+            <hr>
+            <label>Any comments or suggestions?</label>
+            <label>
+                <textarea id="commentssug" name="commentssug" rows="4" cols="50">Enter your comment here...</textarea>
+            </label>
+            <button id="submit">submit</button>
+        </form>
+    </main>
+    <footer>
+        based on the FreeCodeCamp Survey Form Assignment
+    </footer>
+</div>
+</body>
