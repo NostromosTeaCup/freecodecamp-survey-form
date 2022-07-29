@@ -40,7 +40,7 @@ header {
 
 hr {
     height: 1px;
-    background-image: linear-gradient(to right, #FDA7DF10, var(--midcolor), #9980FA10);;
+    background-image: linear-gradient(to right, #FDA7DF10, var(--midcolor), #9980FA10);
     border-style: none;
     margin-bottom: 8px;
 }
